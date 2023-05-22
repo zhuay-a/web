@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta http-equiv="refresh" content="5">-->
+    <title>login</title>
+   <style>
+   body{
+      background-image: url("loginback.jpg");
+       ackground-size:cover;
+       background-attachment:fixed;
+       margin: 0px;
+   }
+   #divstyle{
+       background-color: rgba(240, 248, 255, 0.75);
+       position: absolute;
+       top: 150px;
+       left: 400px;
+       width: 530px;
+       height: 380px;
+       border-radius: 6px;
+       border: 1px solid rgba(255, 255, 255, 0.80);
+       padding: 20px;
+       text-align: center;
+   }
+   #spanstyle{
+       display:block;
+       font-weight: bold;
+       font-size: 40px;
+       text-shadow: 5px 3px 5px;
+       text-align: center;
+       line-height: 50px;
+   }
+   .buttonstyle{
+       background-color: white;
+       width: 100px; height: 40px;
+       font-size: 20px;
+       border-radius: 5px;
+       transition-duration: 0.4s;
+       position: absolute;
+       top: 250px;
+       left: 230px;
+   }
+   .a{
+       background-color: white;
+       color: black;
+       border: 2px solid #e7e7e7;
+   }
+   .a:hover{
+       background-color: rgba(76, 175, 92, 0.7);
+       color: white;
+   }
+  </style>
+</head>
+<body>
+    <script>
+        function jump()
+        {
+            window.location.href="_body.html";
+        }
+    </script>
+    <div id = "divstyle">
+       <span id = "spanstyle">登录</span>
+        <form>
+            <fieldset>
+                <legend>请输入</legend>
+                账号: <input type="text" name = "number" style = "font-size: 20px; width: 300px; height: 30px;"><br/><br/>
+                密码: <input type="password" nema = "keynumber" style = "font-size: 20px; width: 300px; height: 28px"><br/><br/><br/>
+            </fieldset>
+        </form>
+
+        <button class = "buttonstyle a" onclick="jump()">登录</button>
+
+    </div>
+</body>
+</html>
